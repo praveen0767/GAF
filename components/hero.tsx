@@ -52,7 +52,7 @@ export function HeroSection() {
       </div>
 
       {/* Premium Glassmorphic Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center z-20">
+      <div className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center z-20">
         <a 
           href="#trust-bar" 
           className="flex flex-col items-center group cursor-pointer"

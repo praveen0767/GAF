@@ -1,12 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className={`${isHome ? 'absolute bg-transparent' : 'sticky bg-slate-900 border-b border-slate-800 shadow-sm'} top-0 w-full z-50 py-5 transition-colors duration-300`}>
@@ -38,11 +40,34 @@ export function Navbar() {
           >
             Submit Issue
           </Link>
-          <button className="md:hidden text-white hover:text-slate-200 transition-colors">
-            <Menu className="w-6 h-6" />
+          <button 
+            className="md:hidden text-white hover:text-slate-200 transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-800 py-4 shadow-xl">
+          <div className="container mx-auto px-6 flex flex-col gap-4">
+            <Link href="/about" className="text-sm font-medium text-slate-200 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+            <Link href="/how-it-works" className="text-sm font-medium text-slate-200 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Process</Link>
+            <Link href="/categories" className="text-sm font-medium text-slate-200 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Sectors</Link>
+            <Link href="/solutions" className="text-sm font-medium text-slate-200 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Solutions</Link>
+            <Link href="/reports" className="text-sm font-medium text-slate-200 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Intelligence</Link>
+            <Link 
+              href="/submit-issue" 
+              className="inline-flex items-center justify-center px-6 py-3 mt-2 text-sm font-semibold text-slate-900 bg-white rounded-md hover:bg-slate-100 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Submit Issue
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
