@@ -1,4 +1,102 @@
-{
+const fs = require('fs');
+
+const en = {
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "process": "Process",
+    "sectors": "Sectors",
+    "solutions": "Solutions",
+    "intelligence": "Intelligence",
+    "submitIssue": "Submit Issue",
+    "title": "Godavari Agenda Forum",
+    "backToHome": "Back to Home"
+  },
+  "Hero": {
+    "title1": "People’s Voice.",
+    "title2": "Structured Intelligence.",
+    "title3": "Public Action.",
+    "subtitle": "A people-first platform for welfare, development, industrial growth, and technology-driven governance.",
+    "submitIssue": "Submit Issue",
+    "exploreSolutions": "Explore Solutions",
+    "discoverMore": "Discover More"
+  },
+  "Home": {
+    "stats": {
+      "voices": "Voices Logged",
+      "districts": "Active Districts",
+      "review": "Under Review",
+      "resolved": "Resolved Actions",
+      "mla": "MLA Network",
+      "mp": "MP Leadership"
+    },
+    "purpose": {
+      "title1": "We are not a grievance cell.",
+      "title2": "We are a structural intelligence layer.",
+      "desc": "Godavari Agenda Forum (GAF) is a premium political-tech platform designed to convert disorganized public voices into actionable, structured data. We bridge the gap between people-first challenges and strategic, development-focused leadership."
+    },
+    "process": {
+      "label": "The Process",
+      "title": "Structured Public Action",
+      "step1Title": "Public Voice",
+      "step1Desc": "Issues are securely registered and mapped.",
+      "step2Title": "Classification",
+      "step2Desc": "Data is categorized and prioritized automatically.",
+      "step3Title": "Strategic Review",
+      "step3Desc": "Expert assessment for immediate leadership briefing.",
+      "step4Title": "Public Action",
+      "step4Desc": "Visible intervention and final resolution."
+    },
+    "intelligence": {
+      "label": "Intelligence Layer",
+      "title": "Pattern Detection \n & Prioritization",
+      "desc": "Every submission is processed through our intelligence framework. We don't just count complaints; we detect district-level concern clustering, track topic prioritization, and generate strategic action logic.",
+      "viewDashboard": "View Public Dashboard"
+    },
+    "solutions": {
+      "label": "Public Action",
+      "title": "Recent Resolutions",
+      "viewAll": "View All Actions",
+      "resolvedBadge": "Resolved",
+      "sampleTitle": "Irrigation Canal Repair in Amalapuram Sector",
+      "sampleDesc": "Strategic intervention approved following district-level pattern detection. Repairs completed in 14 days.",
+      "owner": "Owner: Local Admin"
+    },
+    "cta": {
+      "title": "Structured Listening \n Creates Visible Action.",
+      "desc": "A forum built for accountability, not noise. Register your issue securely today.",
+      "btn": "Register Issue"
+    },
+    "sectors": {
+      "agri": "Agriculture",
+      "youth": "Youth & Employment",
+      "edu": "Education",
+      "health": "Health",
+      "women": "Women's Welfare",
+      "roads": "Roads & Infra",
+      "industry": "Industry",
+      "gov": "Governance",
+      "tech": "Technology"
+    }
+  },
+  "Footer": {
+    "desc": "A structural intelligence platform mapping public issues to strategic development in the Godavari region.",
+    "links": "Platform Links",
+    "legal": "Legal & Terms",
+    "contact": "Contact",
+    "submit": "Submit Issue",
+    "intelligence": "Intelligence Dashboard",
+    "about": "About GAF",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookie": "Cookie Policy",
+    "email": "contact@gaf.org.in",
+    "rights": "All rights reserved.",
+    "designed": "Designed by"
+  }
+};
+
+const te = {
   "Navbar": {
     "home": "హోమ్",
     "about": "మా గురించి",
@@ -91,120 +189,9 @@
     "email": "contact@gaf.org.in",
     "rights": "అన్ని హక్కులూ ప్రత్యేకించుకోవడమైనది.",
     "designed": "రూపకల్పన"
-  },
-  "Reports": {
-    "title": "ఇంటెలిజెన్స్ రిపోర్ట్స్",
-    "subtitle": "జిల్లా స్థాయి కొలమానాలు, నమూనా గుర్తింపు మరియు వ్యూహాత్మక పనితీరు డాష్‌బోర్డ్‌లు.",
-    "chartTitle": "సమస్యల వాల్యూమ్ vs పరిష్కారం",
-    "timeRange": {
-      "30days": "గత 30 రోజులు",
-      "quarter": "గత త్రైమాసికం",
-      "ytd": "ఈ సంవత్సరం"
-    },
-    "metrics": {
-      "rate": "పరిష్కార రేటు",
-      "categories": "క్రియాశీల రంగాలు",
-      "total": "మొత్తం సమర్పణలు"
-    },
-    "briefings": {
-      "title": "నెలవారీ బ్రీఫింగ్‌లు",
-      "oct": "అక్టోబర్ నివేదిక",
-      "octDesc": "వ్యవసాయం & నీరు",
-      "sep": "సెప్టెంబర్ నివేదిక",
-      "sepDesc": "విద్య & మౌలిక సదుపాయాలు",
-      "aug": "ఆగస్టు నివేదిక",
-      "augDesc": "ఆరోగ్య రంగ సమీక్ష",
-      "jul": "జూలై నివేదిక",
-      "julDesc": "యువత ఉపాధి డేటా",
-      "download": "PDF డౌన్‌లోడ్ చేయండి"
-    }
-  },
-  "SubmitIssue": {
-    "title": "ప్రజా సమస్యను నమోదు చేయండి",
-    "secure": "PIT కి సురక్షితమైన సమర్పణ.",
-    "official": "అధికారిక ఇంటెక్ ఫారం",
-    "section1": {
-      "title": "1. వ్యక్తిగత సమాచారం",
-      "name": "పూర్తి పేరు",
-      "nameHolder": "ఉదా. రామకృష్ణ వ.",
-      "phone": "ఫోన్ నంబర్",
-      "phoneHolder": "+91"
-    },
-    "section2": {
-      "title": "2. భౌగోళిక స్థానం",
-      "district": "జిల్లా",
-      "districtHolder": "జిల్లాను ఎంచుకోండి",
-      "districts": {
-        "east": "తూర్పు గోదావరి",
-        "west": "పశ్చిమ గోదావరి",
-        "kona": "కోనసీమ",
-        "kakinada": "కాకినాడ"
-      },
-      "mandal": "మండలం / నియోజకవర్గం",
-      "mandalHolder": "మండలం నమోదు చేయండి"
-    },
-    "section3": {
-      "title": "3. సమస్య వివరాలు",
-      "sector": "ప్రాథమిక రంగం",
-      "sectorHolder": "రంగాన్ని ఎంచుకోండి",
-      "sectors": {
-        "agri": "వ్యవసాయం",
-        "infra": "మౌలిక సదుపాయాలు & రోడ్లు",
-        "health": "ఆరోగ్య సంరక్షణ",
-        "edu": "విద్య",
-        "welfare": "సాంఘిక సంక్షేమం",
-        "other": "ఇతర"
-      },
-      "descLabel": "సమస్య వివరణ",
-      "descHelp": "దయచేసి నిర్దిష్ట వివరాలను అందించండి. చర్య తీసుకోదగిన సమాచారం వేగంగా ప్రాధాన్యతను పొందుతుంది.",
-      "descHolder": "సమస్యను, ఎవరు ప్రభావితమయ్యారు మరియు స్థానాన్ని వివరించండి..."
-    },
-    "submitBtn": "ప్రజా సమస్యను సమర్పించండి"
-  },
-  "About": {
-    "title": "గోదావరి అజెండా ఫోరమ్ గురించి",
-    "subtitle": "అవ్యవస్థీకృత ప్రజా స్వరాలను చర్య తీసుకోదగిన, నిర్మాణాత్మక డేటాగా మార్చడానికి రూపొందించబడిన ప్రీమియం పొలిటికల్-టెక్ ప్లాట్‌ఫారమ్.",
-    "missionTitle": "మా లక్ష్యం",
-    "missionDesc": "గోదావరి ప్రాంతానికి పారదర్శకమైన, డేటా-ఆధారిత ఇంటెలిజెన్స్ లేయర్‌ను అందించడం ద్వారా ప్రజల మొదటి సవాళ్లు మరియు వ్యూహాత్మక, అభివృద్ధి-కేంద్రీకృత నాయకత్వం మధ్య అంతరాన్ని తగ్గించడం.",
-    "visionTitle": "మా దృక్పథం",
-    "visionDesc": "జవాబుదారీ, సాంకేతికత-ఆధారిత పాలన ద్వారా ప్రతి ప్రజా ఆందోళన క్రమపద్ధతిలో నమోదు చేయబడే, తెలివిగా వర్గీకరించబడే మరియు ఖచ్చితంగా పరిష్కరించబడే భవిష్యత్తు.",
-    "principlesTitle": "ప్రధాన సూత్రాలు",
-    "p1": {
-      "title": "పారదర్శకత",
-      "desc": "సమర్పణ నుండి పరిష్కారం వరకు ప్రతి సమస్య బహిరంగంగా ట్రాక్ చేయబడుతుంది."
-    },
-    "p2": {
-      "title": "జవాబుదారీతనం",
-      "desc": "ప్రతి వ్యూహాత్మక జోక్యానికి స్పష్టమైన యాజమాన్యం కేటాయించబడింది."
-    },
-    "p3": {
-      "title": "సమర్థత",
-      "desc": "డేటా-ఆధారిత ప్రాధాన్యత ముందుగా క్లిష్టమైన సమస్యలు పరిష్కరించబడేలా చేస్తుంది."
-    }
-  },
-  "Categories": {
-    "title": "Categories పేజీ",
-    "subtitle": "Categories గురించి సమాచారం.",
-    "content": "ఈ కంటెంట్ అనువదించబడుతోంది."
-  },
-  "Contact": {
-    "title": "Contact పేజీ",
-    "subtitle": "Contact గురించి సమాచారం.",
-    "content": "ఈ కంటెంట్ అనువదించబడుతోంది."
-  },
-  "HowItWorks": {
-    "title": "HowItWorks పేజీ",
-    "subtitle": "HowItWorks గురించి సమాచారం.",
-    "content": "ఈ కంటెంట్ అనువదించబడుతోంది."
-  },
-  "Solutions": {
-    "title": "Solutions పేజీ",
-    "subtitle": "Solutions గురించి సమాచారం.",
-    "content": "ఈ కంటెంట్ అనువదించబడుతోంది."
-  },
-  "Team": {
-    "title": "Team పేజీ",
-    "subtitle": "Team గురించి సమాచారం.",
-    "content": "ఈ కంటెంట్ అనువదించబడుతోంది."
   }
-}
+};
+
+fs.writeFileSync('messages/en.json', JSON.stringify(en, null, 2));
+fs.writeFileSync('messages/te.json', JSON.stringify(te, null, 2));
+console.log('Dictionaries generated!');

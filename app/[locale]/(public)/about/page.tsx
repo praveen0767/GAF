@@ -1,16 +1,19 @@
 import { Shield, Target, Eye } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
+  const t = useTranslations('About');
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 pt-32 pb-24">
       <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 font-heading tracking-tight mb-4">
-            About Godavari Agenda Forum
+            {t('title')}
           </h1>
           <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto">
-            A premium political-tech platform designed to convert disorganized public voices into actionable, structured data.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -21,10 +24,10 @@ export default function AboutPage() {
               <div className="w-10 h-10 bg-slate-50 border border-slate-100 flex items-center justify-center rounded-lg text-blue-600">
                 <Target className="w-5 h-5" />
               </div>
-              <h2 className="text-xl font-bold text-slate-900">Our Mission</h2>
+              <h2 className="text-xl font-bold text-slate-900">{t('missionTitle')}</h2>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed font-medium">
-              To bridge the gap between people-first challenges and strategic, development-focused leadership by providing a transparent, data-driven intelligence layer for the Godavari region.
+              {t('missionDesc')}
             </p>
           </div>
 
@@ -33,22 +36,22 @@ export default function AboutPage() {
               <div className="w-10 h-10 bg-slate-50 border border-slate-100 flex items-center justify-center rounded-lg text-blue-600">
                 <Eye className="w-5 h-5" />
               </div>
-              <h2 className="text-xl font-bold text-slate-900">Our Vision</h2>
+              <h2 className="text-xl font-bold text-slate-900">{t('visionTitle')}</h2>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed font-medium">
-              A future where every public concern is systematically logged, intelligently categorized, and definitively resolved through accountable, technology-driven governance.
+              {t('visionDesc')}
             </p>
           </div>
         </div>
 
         {/* Core Principles */}
         <div>
-          <h2 className="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold mb-6 text-center">Core Principles</h2>
+          <h2 className="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold mb-6 text-center">{t('principlesTitle')}</h2>
           <div className="grid sm:grid-cols-3 gap-6 text-center">
             {[
-              { title: "Transparency", desc: "Every issue tracked openly from submission to resolution." },
-              { title: "Accountability", desc: "Clear ownership assigned to every strategic intervention." },
-              { title: "Efficiency", desc: "Data-driven prioritization ensures critical problems are solved first." }
+              { title: t('p1.title'), desc: t('p1.desc') },
+              { title: t('p2.title'), desc: t('p2.desc') },
+              { title: t('p3.title'), desc: t('p3.desc') }
             ].map((item, i) => (
               <div key={i} className="p-6 bg-white border border-slate-200 rounded-lg shadow-sm">
                 <h3 className="text-sm font-bold text-slate-900 mb-2">{item.title}</h3>

@@ -18,5 +18,193 @@
     "submitIssue": "Submit Issue",
     "exploreSolutions": "Explore Solutions",
     "discoverMore": "Discover More"
+  },
+  "Home": {
+    "stats": {
+      "voices": "Voices Logged",
+      "districts": "Active Districts",
+      "review": "Under Review",
+      "resolved": "Resolved Actions",
+      "mla": "MLA Network",
+      "mp": "MP Leadership"
+    },
+    "purpose": {
+      "title1": "We are not a grievance cell.",
+      "title2": "We are a structural intelligence layer.",
+      "desc": "Godavari Agenda Forum (GAF) is a premium political-tech platform designed to convert disorganized public voices into actionable, structured data. We bridge the gap between people-first challenges and strategic, development-focused leadership."
+    },
+    "process": {
+      "label": "The Process",
+      "title": "Structured Public Action",
+      "step1Title": "Public Voice",
+      "step1Desc": "Issues are securely registered and mapped.",
+      "step2Title": "Classification",
+      "step2Desc": "Data is categorized and prioritized automatically.",
+      "step3Title": "Strategic Review",
+      "step3Desc": "Expert assessment for immediate leadership briefing.",
+      "step4Title": "Public Action",
+      "step4Desc": "Visible intervention and final resolution."
+    },
+    "intelligence": {
+      "label": "Intelligence Layer",
+      "title": "Pattern Detection \n & Prioritization",
+      "desc": "Every submission is processed through our intelligence framework. We don't just count complaints; we detect district-level concern clustering, track topic prioritization, and generate strategic action logic.",
+      "viewDashboard": "View Public Dashboard"
+    },
+    "solutions": {
+      "label": "Public Action",
+      "title": "Recent Resolutions",
+      "viewAll": "View All Actions",
+      "resolvedBadge": "Resolved",
+      "sampleTitle": "Irrigation Canal Repair in Amalapuram Sector",
+      "sampleDesc": "Strategic intervention approved following district-level pattern detection. Repairs completed in 14 days.",
+      "owner": "Owner: Local Admin"
+    },
+    "cta": {
+      "title": "Structured Listening \n Creates Visible Action.",
+      "desc": "A forum built for accountability, not noise. Register your issue securely today.",
+      "btn": "Register Issue"
+    },
+    "sectors": {
+      "agri": "Agriculture",
+      "youth": "Youth & Employment",
+      "edu": "Education",
+      "health": "Health",
+      "women": "Women's Welfare",
+      "roads": "Roads & Infra",
+      "industry": "Industry",
+      "gov": "Governance",
+      "tech": "Technology"
+    }
+  },
+  "Footer": {
+    "desc": "A structural intelligence platform mapping public issues to strategic development in the Godavari region.",
+    "links": "Platform Links",
+    "legal": "Legal & Terms",
+    "contact": "Contact",
+    "submit": "Submit Issue",
+    "intelligence": "Intelligence Dashboard",
+    "about": "About GAF",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookie": "Cookie Policy",
+    "email": "contact@gaf.org.in",
+    "rights": "All rights reserved.",
+    "designed": "Designed by"
+  },
+  "Reports": {
+    "title": "Intelligence Reports",
+    "subtitle": "District-level metrics, pattern detection, and strategic performance dashboards.",
+    "chartTitle": "Issue Volume vs Resolution",
+    "timeRange": {
+      "30days": "Last 30 Days",
+      "quarter": "Last Quarter",
+      "ytd": "Year to Date"
+    },
+    "metrics": {
+      "rate": "Resolution Rate",
+      "categories": "Active Categories",
+      "total": "Total Submissions"
+    },
+    "briefings": {
+      "title": "Monthly Briefings",
+      "oct": "October Report",
+      "octDesc": "Agriculture & Water Focus",
+      "sep": "September Report",
+      "sepDesc": "Education & Infrastructure",
+      "aug": "August Report",
+      "augDesc": "Health Sector Review",
+      "jul": "July Report",
+      "julDesc": "Youth Employment Data",
+      "download": "Download PDF"
+    }
+  },
+  "SubmitIssue": {
+    "title": "Register Public Issue",
+    "secure": "Secure and encrypted submission to the PIT.",
+    "official": "Official Intake Form",
+    "section1": {
+      "title": "1. Personal Information",
+      "name": "Full Name",
+      "nameHolder": "e.g. Ramakrishna V.",
+      "phone": "Phone Number",
+      "phoneHolder": "+91"
+    },
+    "section2": {
+      "title": "2. Geographic Location",
+      "district": "District",
+      "districtHolder": "Select District",
+      "districts": {
+        "east": "East Godavari",
+        "west": "West Godavari",
+        "kona": "Konaseema",
+        "kakinada": "Kakinada"
+      },
+      "mandal": "Mandal / Constituency",
+      "mandalHolder": "Enter Mandal"
+    },
+    "section3": {
+      "title": "3. Issue Details",
+      "sector": "Primary Sector",
+      "sectorHolder": "Select Sector",
+      "sectors": {
+        "agri": "Agriculture",
+        "infra": "Infrastructure & Roads",
+        "health": "Healthcare",
+        "edu": "Education",
+        "welfare": "Social Welfare",
+        "other": "Other"
+      },
+      "descLabel": "Issue Description",
+      "descHelp": "Please provide specific details. Actionable information receives faster priority.",
+      "descHolder": "Describe the issue, who is affected, and the location..."
+    },
+    "submitBtn": "Submit Public Issue"
+  },
+  "About": {
+    "title": "About Godavari Agenda Forum",
+    "subtitle": "A premium political-tech platform designed to convert disorganized public voices into actionable, structured data.",
+    "missionTitle": "Our Mission",
+    "missionDesc": "To bridge the gap between people-first challenges and strategic, development-focused leadership by providing a transparent, data-driven intelligence layer for the Godavari region.",
+    "visionTitle": "Our Vision",
+    "visionDesc": "A future where every public concern is systematically logged, intelligently categorized, and definitively resolved through accountable, technology-driven governance.",
+    "principlesTitle": "Core Principles",
+    "p1": {
+      "title": "Transparency",
+      "desc": "Every issue tracked openly from submission to resolution."
+    },
+    "p2": {
+      "title": "Accountability",
+      "desc": "Clear ownership assigned to every strategic intervention."
+    },
+    "p3": {
+      "title": "Efficiency",
+      "desc": "Data-driven prioritization ensures critical problems are solved first."
+    }
+  },
+  "Categories": {
+    "title": "Categories Page",
+    "subtitle": "Information about Categories.",
+    "content": "This content is being translated."
+  },
+  "Contact": {
+    "title": "Contact Page",
+    "subtitle": "Information about Contact.",
+    "content": "This content is being translated."
+  },
+  "HowItWorks": {
+    "title": "HowItWorks Page",
+    "subtitle": "Information about HowItWorks.",
+    "content": "This content is being translated."
+  },
+  "Solutions": {
+    "title": "Solutions Page",
+    "subtitle": "Information about Solutions.",
+    "content": "This content is being translated."
+  },
+  "Team": {
+    "title": "Team Page",
+    "subtitle": "Information about Team.",
+    "content": "This content is being translated."
   }
 }
