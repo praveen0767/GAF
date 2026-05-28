@@ -31,7 +31,7 @@ export function Navbar() {
         </nav>
 
         {/* Right: CTA */}
-        <div className="flex items-center gap-4 lg:pr-8">
+        <div className="flex items-center gap-4 lg:pr-16">
           <Link 
             href="/submit-issue" 
             className="hidden lg:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-slate-900 bg-white rounded-md hover:bg-slate-100 transition-colors shadow-sm"
