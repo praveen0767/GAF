@@ -90,7 +90,10 @@
     "cookie": "Cookie Policy",
     "email": "contact@gaf.org.in",
     "rights": "All rights reserved.",
-    "designed": "Designed by"
+    "designed": "Designed by",
+    "process": "The Process",
+    "sectors": "Sector Index",
+    "solutions": "Public Actions"
   },
   "Reports": {
     "title": "Intelligence Reports",
@@ -183,17 +186,31 @@
     }
   },
   "Categories": {
-    "title": "Sector Intelligence Index",
-    "subtitle": "Browse public issues and structural metrics categorized by specific development sectors.",
+    "title": "Sector Index",
+    "subtitle": "Browse public concerns by categorized sectors. Our intelligence layer automatically routes issues to the appropriate domain for strategic review.",
+    "issuesCount": "Issues",
     "sectors": {
-      "agri": "Agriculture & Irrigation",
-      "youth": "Youth & Employment",
-      "edu": "Education & Schools",
-      "health": "Public Health",
-      "infra": "Infrastructure & Roads",
-      "welfare": "Social Welfare"
+      "agriculture": "Agriculture",
+      "health": "Health",
+      "education": "Education",
+      "infra": "Infrastructure",
+      "welfare": "Women's Welfare",
+      "housing": "Housing",
+      "employment": "Employment",
+      "governance": "Governance",
+      "tech": "Technology"
     },
-    "desc": "Real-time tracking of sector health and pending resolutions."
+    "sectorsDesc": {
+      "agriculture": "Farming, irrigation, and crop management issues.",
+      "health": "Hospitals, primary care, and sanitation.",
+      "education": "Schools, resources, and youth development.",
+      "infra": "Roads, bridges, and public facilities.",
+      "welfare": "Safety, empowerment, and support programs.",
+      "housing": "Public housing and shelter initiatives.",
+      "employment": "Job creation and skill development.",
+      "governance": "Administrative efficiency and transparency.",
+      "tech": "Digital infrastructure and connectivity."
+    }
   },
   "Contact": {
     "title": "Contact Page",
@@ -201,29 +218,33 @@
     "content": "This content is being translated."
   },
   "HowItWorks": {
-    "title": "The GAF Process",
-    "subtitle": "How we convert disorganized public grievances into structured, actionable intelligence.",
-    "step1": "Public Voice Registration",
-    "step1Desc": "Citizens securely register their issues through our platform. Data is encrypted and mapped to specific geographic coordinates.",
-    "step2": "Automated Classification",
-    "step2Desc": "Our intelligence engine automatically categorizes issues by sector, urgency, and pattern clustering.",
-    "step3": "Strategic Review",
-    "step3Desc": "Subject matter experts and regional coordinators review clustered issues to formulate intervention strategies.",
-    "step4": "Action & Resolution",
-    "step4Desc": "Data is presented to the leadership network for definitive public action and continuous tracking until resolved.",
-    "cta": "Submit an Issue Today"
+    "title": "How It Works",
+    "subtitle": "From an individual's voice to structured intelligence and final resolution. Our systematic 7-step process ensures nothing is lost.",
+    "step1": "1. Public Voice",
+    "step1Desc": "Citizens securely register their issues and concerns.",
+    "step2": "2. Issue Registration",
+    "step2Desc": "Data is standardized and logged into the system.",
+    "step3": "3. Classification",
+    "step3Desc": "Algorithmic sorting assigns categories and urgency.",
+    "step4": "4. Intelligence Review",
+    "step4Desc": "PIT analysts assess patterns and strategic impact.",
+    "step5": "5. Leadership Review",
+    "step5Desc": "Elected officials and administrators review priorities.",
+    "step6": "6. Public Action",
+    "step6Desc": "Resources are mobilized and interventions executed.",
+    "step7": "7. Tracking & Resolution",
+    "step7Desc": "Outcome is verified and metrics updated on the dashboard."
   },
   "Solutions": {
     "title": "Public Actions & Solutions",
-    "subtitle": "A transparent ledger of strategic interventions and verified resolutions across the region.",
+    "subtitle": "A transparent log of resolved interventions and strategic actions taken by the forum.",
+    "searchPlaceholder": "Search solutions...",
+    "filter": "Filter",
     "status": "Resolved",
-    "sol1Title": "Irrigation Canal Modernization",
-    "sol1Desc": "Pattern detection flagged severe water loss in East Godavari. GAF coordinated with local irrigation boards for a 14-day rapid repair.",
-    "sol2Title": "Primary Health Center Staffing",
-    "sol2Desc": "Clustered health complaints led to the reassignment of 12 medical officers to understaffed rural clinics.",
-    "sol3Title": "Highway Infrastructure Repair",
-    "sol3Desc": "Aggregated pothole reports triggered a state-level intervention resulting in 45km of emergency road surfacing.",
-    "viewDetails": "View Action Details"
+    "solTitle": "Implementation of New Health Sub-center in Amalapuram Sector",
+    "solDesc": "Strategic intervention approved following district-level pattern detection. The health department deployed a new sub-center resulting in medical access for 5,000 residents.",
+    "taskforce": "PIT Taskforce",
+    "details": "Details"
   },
   "Team": {
     "title": "Team Page",
