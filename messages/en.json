@@ -183,9 +183,17 @@
     }
   },
   "Categories": {
-    "title": "Categories Page",
-    "subtitle": "Information about Categories.",
-    "content": "This content is being translated."
+    "title": "Sector Intelligence Index",
+    "subtitle": "Browse public issues and structural metrics categorized by specific development sectors.",
+    "sectors": {
+      "agri": "Agriculture & Irrigation",
+      "youth": "Youth & Employment",
+      "edu": "Education & Schools",
+      "health": "Public Health",
+      "infra": "Infrastructure & Roads",
+      "welfare": "Social Welfare"
+    },
+    "desc": "Real-time tracking of sector health and pending resolutions."
   },
   "Contact": {
     "title": "Contact Page",
@@ -193,14 +201,29 @@
     "content": "This content is being translated."
   },
   "HowItWorks": {
-    "title": "HowItWorks Page",
-    "subtitle": "Information about HowItWorks.",
-    "content": "This content is being translated."
+    "title": "The GAF Process",
+    "subtitle": "How we convert disorganized public grievances into structured, actionable intelligence.",
+    "step1": "Public Voice Registration",
+    "step1Desc": "Citizens securely register their issues through our platform. Data is encrypted and mapped to specific geographic coordinates.",
+    "step2": "Automated Classification",
+    "step2Desc": "Our intelligence engine automatically categorizes issues by sector, urgency, and pattern clustering.",
+    "step3": "Strategic Review",
+    "step3Desc": "Subject matter experts and regional coordinators review clustered issues to formulate intervention strategies.",
+    "step4": "Action & Resolution",
+    "step4Desc": "Data is presented to the leadership network for definitive public action and continuous tracking until resolved.",
+    "cta": "Submit an Issue Today"
   },
   "Solutions": {
-    "title": "Solutions Page",
-    "subtitle": "Information about Solutions.",
-    "content": "This content is being translated."
+    "title": "Public Actions & Solutions",
+    "subtitle": "A transparent ledger of strategic interventions and verified resolutions across the region.",
+    "status": "Resolved",
+    "sol1Title": "Irrigation Canal Modernization",
+    "sol1Desc": "Pattern detection flagged severe water loss in East Godavari. GAF coordinated with local irrigation boards for a 14-day rapid repair.",
+    "sol2Title": "Primary Health Center Staffing",
+    "sol2Desc": "Clustered health complaints led to the reassignment of 12 medical officers to understaffed rural clinics.",
+    "sol3Title": "Highway Infrastructure Repair",
+    "sol3Desc": "Aggregated pothole reports triggered a state-level intervention resulting in 45km of emergency road surfacing.",
+    "viewDetails": "View Action Details"
   },
   "Team": {
     "title": "Team Page",
