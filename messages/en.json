@@ -1,0 +1,22 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "process": "Process",
+    "sectors": "Sectors",
+    "solutions": "Solutions",
+    "intelligence": "Intelligence",
+    "submitIssue": "Submit Issue",
+    "title": "Godavari Agenda Forum",
+    "backToHome": "Back to Home"
+  },
+  "Hero": {
+    "title1": "People’s Voice.",
+    "title2": "Structured Intelligence.",
+    "title3": "Public Action.",
+    "subtitle": "A people-first platform for welfare, development, industrial growth, and technology-driven governance.",
+    "submitIssue": "Submit Issue",
+    "exploreSolutions": "Explore Solutions",
+    "discoverMore": "Discover More"
+  }
+}

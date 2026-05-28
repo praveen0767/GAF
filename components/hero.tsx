@@ -1,8 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function HeroSection() {
+  const t = useTranslations('Hero');
+
   return (
     <section className="relative w-full min-h-[85vh] flex items-center bg-slate-900 overflow-hidden">
       {/* Stable Background Handling */}
@@ -22,14 +25,14 @@ export function HeroSection() {
         <div className="max-w-3xl">
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight font-heading">
-            People’s Voice. <br />
-            <span className="text-blue-400">Structured Intelligence.</span> <br />
-            Public Action.
+            {t('title1')} <br />
+            <span className="text-blue-400">{t('title2')}</span> <br />
+            {t('title3')}
           </h1>
 
           {/* Subheading */}
           <p className="max-w-xl text-lg text-slate-300 font-medium leading-relaxed mb-10">
-            A people-first platform for welfare, development, industrial growth, and technology-driven governance.
+            {t('subtitle')}
           </p>
 
           {/* CTA Buttons */}
@@ -38,14 +41,14 @@ export function HeroSection() {
               href="/submit-issue"
               className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-blue-600 rounded-md hover:bg-blue-500 transition-colors shadow-sm w-full sm:w-auto"
             >
-              Submit Issue
+              {t('submitIssue')}
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/solutions"
               className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border border-slate-600 rounded-md hover:bg-slate-800 transition-colors w-full sm:w-auto"
             >
-              Explore Solutions
+              {t('exploreSolutions')}
             </Link>
           </div>
         </div>
@@ -59,7 +62,7 @@ export function HeroSection() {
           aria-label="Scroll to next section"
         >
           <span className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em] mb-4 group-hover:text-white transition-colors">
-            Discover More
+            {t('discoverMore')}
           </span>
           <div className="w-[30px] h-[50px] rounded-full border border-white/20 bg-white/5 backdrop-blur-sm flex justify-center p-1 relative overflow-hidden group-hover:border-white/40 transition-all shadow-lg">
             {/* Animated dot */}
