@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/hero";
 import Link from "next/link";
-import { ArrowRight, Database, Users, Shield, CheckCircle, ArrowUpRight, Cpu } from "lucide-react";
+import { ArrowRight, Database, Users, Shield, CheckCircle, ArrowUpRight, Cpu, Zap, Briefcase, GraduationCap, HeartPulse, Building, Lightbulb, Landmark } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -99,13 +99,21 @@ export default function HomePage() {
             
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
-                "Agriculture", "Youth & Employment", "Education", 
-                "Health", "Women's Welfare", "Roads & Infra",
-                "Industry", "Governance", "Technology"
+                { name: "Agriculture", icon: <Zap className="w-4 h-4" /> },
+                { name: "Youth & Employment", icon: <Briefcase className="w-4 h-4" /> },
+                { name: "Education", icon: <GraduationCap className="w-4 h-4" /> },
+                { name: "Health", icon: <HeartPulse className="w-4 h-4" /> },
+                { name: "Women's Welfare", icon: <Users className="w-4 h-4" /> },
+                { name: "Roads & Infra", icon: <Building className="w-4 h-4" /> },
+                { name: "Industry", icon: <Lightbulb className="w-4 h-4" /> },
+                { name: "Governance", icon: <Landmark className="w-4 h-4" /> },
+                { name: "Technology", icon: <Cpu className="w-4 h-4" /> }
               ].map((cat, i) => (
-                <div key={i} className="bg-white border border-slate-200 p-4 flex flex-col items-center justify-center text-center hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer rounded-lg">
-                  <div className="w-6 h-6 rounded-full bg-slate-100 mb-3"></div>
-                  <span className="text-[10px] font-bold text-slate-800 uppercase tracking-wider">{cat}</span>
+                <div key={i} className="bg-white border border-slate-200 p-4 flex flex-col items-center justify-center text-center hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer rounded-lg group">
+                  <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:text-blue-600 group-hover:bg-blue-50 transition-colors mb-3">
+                    {cat.icon}
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-800 uppercase tracking-wider group-hover:text-blue-700">{cat.name}</span>
                 </div>
               ))}
             </div>

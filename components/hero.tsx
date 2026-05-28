@@ -8,7 +8,7 @@ export function HeroSection() {
       {/* Stable Background Handling */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero.png"
+          src="/hero-new.png"
           alt="Godavari region"
           fill
           className="object-cover opacity-40"
