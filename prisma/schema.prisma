@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CITIZEN
+  ANALYST
+  LEADERSHIP
+  ADMIN
+}
+
+enum IssueStatus {
+  NEW
+  UNDER_REVIEW
+  ASSIGNED
+  IN_PROGRESS
+  ESCALATED
+  RESOLVED
+  CLOSED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      Role
+  district  String?
+  createdAt DateTime @default(now())
+}
+
+model Issue {
+  id            String      @id @default(cuid())
+  issueId       String      @unique
+  title         String
+  description   String
+  categoryId    String
+  subcategoryId String?
+  district      String
+  mandal        String?
+  village       String?
+  urgency       String
+  status        IssueStatus @default(NEW)
+  citizenName   String
+  mobile        String
+  assignedTo    String?
+  owner         String?
+  fileUrl       String?
+  actionNotes   String?
+  closureNote   String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  
+  category      Category    @relation(fields: [categoryId], references: [id])
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  issues      Issue[]
+}
+
+model Report {
+  id        String   @id @default(cuid())
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+}
